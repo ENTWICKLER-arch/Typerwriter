@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div.container{
+            width:80%;
+            margin:5px auto;
+        }
+
+        div.content{
+            border:1px solid transparent;
+            box-shadow:10px 10px 10px black;
+        }
+
+        div.btn{
+            text-align: center;
+            background-color: grey;
+            padding:5px;
+            margin:5px 0px;
+        }
+        input#text1{
+            width:100%;
+        }
+
+        div.data{
+            margin:10px 0px;
+            padding:5px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function typing(bc,fc)
+        {
+            var x = document.getElementById('text1');
+            x.style.background=bc;
+            x.style.color = fc;
+
+            document.getElementById('holder').innerHTML = x.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque hic ipsam aspernatur sit placeat qui accusamus nesciunt, beatae quasi, blanditiis voluptatum facilis omnis commodi voluptatem? Quae totam, aspernatur aperiam earum magni dolores. Sint qui nam id eos? Inventore ad optio quia voluptatem, temporibus pariatur soluta deleniti laboriosam neque vitae.
+        </div>
+        <div class="btn">
+            <input type="text" name="" id="text1" onkeyup="typing('white','black')" onkeydown="typing('yellow','black')" autocomplete="off">
+        </div>
+        <div class="data" id="holder">
+
+        </div>
+    </div>
+</body>
+</html>
